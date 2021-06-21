@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5FCFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/antic"
+        android:gravity="center|center_horizontal"
+        android:text="Weight (kg)"
+        android:textColor="#009685"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="132dp"
+        android:fontFamily="@font/antic"
+        android:gravity="center|center_horizontal"
+        android:text="Height (cm)"
+        android:textColor="#009685"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:shadowColor="#0D8BA1"
+        android:text="Calculate"
+        android:textColor="#004D44"
+        android:textColorHighlight="#004D40"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="#019B9B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#006164"
+        app:strokeColor="#840E88" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="240dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/dekko"
+        android:gravity="center"
+        android:textColor="#C0CA33"
+        android:textSize="23dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="373dp"
+        android:layout_height="153dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bmiee" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#C0CA33"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="132dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#C0CA33"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
